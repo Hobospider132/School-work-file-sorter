@@ -1,5 +1,5 @@
 # School-work-file-sorter
-SWFS By Christian Duong V4 (May only have 1 or 2 more updates)
+SWFS By Christian Duong V5 (May only have 1 or 2 more updates)
 Hi
 This is a small perl program that will sort out your school files for you
 a few things you will need to do in order to edit this program is:
