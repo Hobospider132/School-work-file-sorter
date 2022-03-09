@@ -7,8 +7,6 @@ use File::Basename;
 use File::Find;
 use File::Copy;
 
-
-  
 finddepth(
 {
     wanted => \&findfiles,
@@ -60,7 +58,7 @@ finddepth(
 {
     wanted => \&findfiles,
 },
-'C:\Users\chris\Downloads'
+'C:\Users\Chris\Downloads'
 );
   
 sub findfiles
@@ -69,7 +67,7 @@ sub findfiles
     #To search the files directory
 	my $baseName = basename($File::Find::name);
 	my $destName = "${DestFolder}\\${baseName}";
-	if (/^.*docx$/ or /^.*pdf$/) {
+	if (/^.*\.docx$/ or /^.*\.pdf$/ or /^.*\.txt$/) {
 		print "${baseName}\n"; 
 		if ($baseName =~ /Engineering/) {
 			$destName = "${DestFolder}\\Engineering\\${baseName}";
@@ -100,5 +98,7 @@ sub findfiles
 };
 
 exit;
+
+
 
 
